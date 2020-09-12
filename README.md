@@ -65,7 +65,6 @@ where `<other info>` can include the Zoom name(s), unmatchable names, and possib
 
 Now, you can jump to one of these subsections: [non-expert](#non-expert), [expert](#expert), or [super-expert](#super-expert).
 
-<!-- <div style="break-after:page"></div> -->
 ## <a name='expert'></a>Expert instructions
 
 1. Unzip the `AttendanceTool.zip` file into some location you can execute programs. See [below](#eur_laptop) if you have an EUR maintained laptop, as there are restrictions on the folders from which you can execute programs you install yourself.
@@ -74,7 +73,6 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
 4. Copy or move both into the same folder as the `AttendanceTool`.
 5. Double click on the script for your OS (Windows or Mac). See [Running AttendanceTool](#running).
 
-<div style="break-after:page"></div>
 ## <a name="non-expert"></a>Non-expert instructions
 
 ### Some technical background:
@@ -115,7 +113,6 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
       * The tool should also work if you save as _CSV UTF-8 (Comma-delimited) (\*.csv)_
    5. Copy or move **Class_list.csv** into the `AttendanceTool` folder.
 
-<!-- <div style="break-after:page"></div> -->
 ## <a name="running"></a>Running AttendanceTool
 
 * _**WARNING:**_ If your laptop's regional settings are European, the columns in your Class list file will be semicolon-separated and not comma-separated. Use the `semicolon` versions of the below commands.
