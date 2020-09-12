@@ -127,8 +127,6 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
   * You can easily add nicknames/alternate names that students may use on Zoom into the Class_list.csv file.
   * Just include the name within either the First name or Last name column:
     * For example: "Robert" (First name) "Axelrod" (Last name) could contain "Bobby Robert" as the first name or "Bobby Axelrod" as the last name, so when he uses "Bobby" on Zoom, this will match.
-<!-- * Lower-casing: -->
-<!--   * To facilitate matching in the absence report, all names will appear lower-cased for the absence report. This is the default behavior of the tool. However, through the super-expert approach, names can appear properly capitalized. -->
 * _No spaces in Zoom name_
   * The tool currently has difficulty when a Zoom name does not include a space, e.g., "BryanConnerty" in Zoom will **not** match "Bryan Connerty" from the class list (unless BryanConnerty is added to the first name or last name columns).
 * _Time Report matching_
@@ -137,7 +135,8 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
   * This is taken care of in the full report.
 * _Entry/exit times_: The entry exit times could also be included in the report, if there's demand for it.
 * _Accents_: The tool could be modified to handle accents.
-
+<!-- * Lower-casing: -->
+<!--   * To facilitate matching in the absence report, all names will appear lower-cased for the absence report. This is the default behavior of the tool. However, through the super-expert approach, names can appear properly capitalized. -->
 
 ## <a name='super-expert'></a>Super-expert - Running from command-line
 
