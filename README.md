@@ -1,14 +1,6 @@
 # ZoomAttendanceTool
 AWK script (and auxiliary batch commands) to capture Zoom meeting attendance and duration of participation\
 Version 1.1 (Sept. 12, 2020)
-
-* _Please email me if you have any questions/requests (e.g., seeing outputs in a different format) or spot any mistakes or unclear points in the documentation or bugs in the tool._
-* _Also, let me know if you come across a similar tool._
-* _A Canvas version of this tool might be do-able, if there's demand._
-
-<!-- Best printed from Firefox to remove URL -->
-<!-- Nah, just print from C:/Temp in Chrome -->
-
 ## Introduction
 
 Jay's **Zoom Attendance Tool** (aka AttendanceTool) provides a report containing:
@@ -32,7 +24,7 @@ Instructions for obtaining these files appear later below.
 
 The default output ("full report") is shown on-screen and also saved in a file named `Report_Full_Absence_and_Time.txt`.
 
-### Attendance --- absence
+### Attendance -- absence
 
 * The 1st part of the output report shows which students were absent.
 * The tool takes the "Class list" and matches names in the "Zoom list" using all parts of each full student's name.
@@ -117,32 +109,35 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
 * _**WARNING:**_ If your laptop's regional settings are European, the columns in your Class list file will be semicolon-separated and not comma-separated. Use the `semicolon` versions of the below commands.
 * Now that the files are in place, you just need to double-click on one of the scripts.
    * For Windows laptops:
-     * `Windows_Full_Report` for the full report described in [Output](#output).
+     * `Win_Full_Report` for the full report described in [Output](#output).
    * For Mac laptops:
      * `Mac_Full_Report`
 * There are some older execution scripts that shows the absence and time separately. E.g., if you only want to see attendance times and do not want to create a Class list CSV.
    * Note that these reports are considered V1.0 (first version) of the tool and may not behave as well as the full report.
-     * `Windows_Time_Report` for a report on total participation duration for each attendee. This list will be automatically sorted from lowest to highest.
-     * `Windows_Absence_Report` for a report on those present and absent.
+     * `Win_Time_Report` for a report on total participation duration for each attendee. This list will be automatically sorted from lowest to highest.
+     * `Win_Absence_Report` for a report on those present and absent.
      * `Mac_Time_Report` 
      * `Mac_Absence_Report`
      * Remember: the outputs for these will written to the console as well as a separate text file, e.g., `Report_Time.txt` or `Report_Absence.txt`.
 	 
-## Improvements and notes
+## Improvements and caveats
 
 <a name="nicknames"></a>
-* Student nicknames:
+* _Student nicknames_
   * You can easily add nicknames/alternate names that students may use on Zoom into the Class_list.csv file.
   * Just include the name within either the First name or Last name column:
     * For example: "Robert" (First name) "Axelrod" (Last name) could contain "Bobby Robert" as the first name or "Bobby Axelrod" as the last name, so when he uses "Bobby" on Zoom, this will match.
 <!-- * Lower-casing: -->
 <!--   * To facilitate matching in the absence report, all names will appear lower-cased for the absence report. This is the default behavior of the tool. However, through the super-expert approach, names can appear properly capitalized. -->
-* Time Report matching:
-  * The time report -- run by itself and not as full report -- does not take into account attendees who re-enter the room with a slightly different name.
+* _No spaces in Zoom name_
+  * The tool currently has difficulty when a Zoom name does not include a space, e.g., "BryanConnerty" in Zoom will **not** match "Bryan Connerty" from the class list (unless BryanConnerty is added to the first name or last name columns).
+* _Time Report matching_
+  * The time report -- run by itself and not as full report -- does **not** take into account attendees who re-enter the room with a slightly different name.
   * You'll have to watch out for these.
   * This is taken care of in the full report.
-* Entry/exit times: The entry exit times could also be included in the report, if there's demand for it.
-* Accents: The tool could be modified to handle accents.
+* _Entry/exit times_: The entry exit times could also be included in the report, if there's demand for it.
+* _Accents_: The tool could be modified to handle accents.
+
 
 ## <a name='super-expert'></a>Super-expert - Running from command-line
 
