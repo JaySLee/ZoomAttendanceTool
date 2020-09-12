@@ -28,7 +28,6 @@ Instructions for obtaining these files appear later below.
 * This document provides instructions for three different computer user levels, based on familiarity of Zoom, data formats, and script running. These levels are  [non-expert](#non-expert), [expert](#expert), and [super-expert](#super-expert).
 * But first, read the next section describing the output report.
 
-<div style="break-after:page"></div>
 ## <a name="Output"></a>Output
 
 The default output ("full report") is shown on-screen and also saved in a file named `Report_Full_Absence_and_Time.txt`.
@@ -145,7 +144,6 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
 * Entry/exit times: The entry exit times could also be included in the report, if there's demand for it.
 * Accents: The tool could be modified to handle accents.
 
-<div style="break-after:page"></div>
 ## <a name='super-expert'></a>Super-expert - Running from command-line
 
 1. Follow the [expert instructions](#expert) for obtaining the files BUT
