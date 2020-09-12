@@ -203,7 +203,6 @@ If you want just the absence report or just the time report, you can do the foll
 
 Thus, endeth the homily.
 
-<div style="break-after:page"></div>
 ## Version History
 | Version | Date       | Description |
 | :-----: | :--:       | :---------- |
