@@ -1,5 +1,5 @@
 # ZoomAttendanceTool
-AWK script (and auxiliary batch commands) to capture Zoom meeting attendance and duration of participation
+AWK script (and auxiliary batch commands) to capture Zoom meeting attendance and duration of participation\
 Version 1.1 (Sept. 12, 2020)
 
 * _Please email me if you have any questions/requests (e.g., seeing outputs in a different format) or spot any mistakes or unclear points in the documentation or bugs in the tool._
