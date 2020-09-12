@@ -32,7 +32,7 @@ Instructions for obtaining these files appear later below.
 
 The default output ("full report") is shown on-screen and also saved in a file named `Report_Full_Absence_and_Time.txt`.
 
-### Attendance -- absence
+### Attendance --- absence
 
 * The 1st part of the output report shows which students were absent.
 * The tool takes the "Class list" and matches names in the "Zoom list" using all parts of each full student's name.
