@@ -83,16 +83,16 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
    * Note that the top level folder for the tool itself is called `AttendanceTool`.
 
 2. _"Zoom list"_: Obtain the meeting participant list CSV file from Zoom:
-   a. In your Zoom account, go to **Reports** -> **Usage**
-   b. If you don't see the meeting, choose the date range appropriately.
-   c. Scroll to the right and click on the number that appears under the column _Participants_.
-   d. In the dialog window that opens, make sure _'Show unique users'_ is **unchecked**
+   1. In your Zoom account, go to **Reports** -> **Usage**
+   2. If you don't see the meeting, choose the date range appropriately.
+   3. Scroll to the right and click on the number that appears under the column _Participants_.
+   4. In the dialog window that opens, make sure _'Show unique users'_ is **unchecked**
       * The tools should work whether or not _'Export meeting with data'_ is checked (but best to uncheck it anyways).
-   e. Click on the **Export** button.
-   f. Rename (or copy) the downloaded file as "**Zoom_list.csv**".
+   5. Click on the **Export** button.
+   6. Rename (or copy) the downloaded file as "**Zoom_list.csv**".
       * Note that the filename is case-sensitive for Macs.
 	  <!-- * If you think you can handle running the tool from the command line (Terminal in Macs), you can name this file whatever you want. -->
-   g. Copy or move **Zoom_list.csv** into the `AttendanceTool` folder.
+   7. Copy or move **Zoom_list.csv** into the `AttendanceTool` folder.
 	  
 2. _"Class list"_: Create a CSV file containing the list of names of all the students in the course/tutorial:
    1. Open the participants Excel XLSX file for your course.
