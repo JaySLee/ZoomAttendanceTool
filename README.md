@@ -24,7 +24,7 @@ Instructions for obtaining these files appear later below.
 
 The default output ("full report") is shown on-screen and also saved in a file named `Report_Full_Absence_and_Time.txt`.
 
-### Attendance &mdash; absence
+### Attendance &ndash; absence
 
 * The 1st part of the output report shows which students were absent.
 * The tool takes the "Class list" and matches names in the "Zoom list" using all parts of each full student's name.
@@ -33,17 +33,17 @@ The default output ("full report") is shown on-screen and also saved in a file n
   * This can happen if students use only parts of their full name for their Zoom screen name and whatever they use in Zoom happens to match multiple people in the Class list.
   * Dealing with these cases are discussed below.
 
-### Attendance &mdash; time
+### Attendance &ndash; time
 
 * The 2nd part of the report shows the total duration of each student's participation (in minutes), sorted by how long they were in meeting.
 * Each line in this part is formatted as follows:
 `<time>,<class name>,<other info>`
 where `<other info>` can include the Zoom name(s), unmatchable names, and possible names. For example:
 
-1. `122,Mike Wagner,(Zoom name:Wag)` &mdash; means Mike Wagner in the Class list attended for 122 minutes. The Zoom name used was `Wag` and that name did not match any other names in the Class list.
-2. `120,Charles,(POSSIBLE class names: Charles Rhoades, Charles Brown)` &mdash; means you had a Zoom attendee named `Charles` but two people in the Class list have that 1st name. Thus, you will need resolve which Charles this was. Also, the absence part will show `ABSENT? Charles Rhoades` and `ABSENT? Charles Brown`.
-3. `90,Kate Sacker,(Zoom name: Kate, K.Sacker)` &mdash; means that Kate Sacker had two separate entries in the Zoom list, possibly because her connection was broken and she re-entered the meeting with a different name. Also, she attended only 90 minutes (of my two-hour course) and so I might want to check the Zoom file to see if she was late or left early. Also, there is no one else in the class named 'Kate' or 'Sacker'.
-4. `135,Taylor Mason,(UNKNOWN: Cannot find in Class_list.csv)` &mdash; means you had an attendee whose name does not appear or cannot be matched to anyone in the Class list. This might be the instructor's name or a student's nickname that's not recorded in the Class list.
+1. `122,Mike Wagner,(Zoom name:Wag)` &ndash; means Mike Wagner in the Class list attended for 122 minutes. The Zoom name used was `Wag` and that name did not match any other names in the Class list.
+2. `120,Charles,(POSSIBLE class names: Charles Rhoades, Charles Brown)` &ndash; means you had a Zoom attendee named `Charles` but two people in the Class list have that 1st name. Thus, you will need resolve which Charles this was. Also, the absence part will show `ABSENT? Charles Rhoades` and `ABSENT? Charles Brown`.
+3. `90,Kate Sacker,(Zoom name: Kate, K.Sacker)` &ndash; means that Kate Sacker had two separate entries in the Zoom list, possibly because her connection was broken and she re-entered the meeting with a different name. Also, she attended only 90 minutes (of my two-hour course) and so I might want to check the Zoom file to see if she was late or left early. Also, there is no one else in the class named 'Kate' or 'Sacker'.
+4. `135,Taylor Mason,(UNKNOWN: Cannot find in Class_list.csv)` &ndash; means you had an attendee whose name does not appear or cannot be matched to anyone in the Class list. This might be the instructor's name or a student's nickname that's not recorded in the Class list.
     * For cases #3 and #4, some students may use [adhoc/nick names](#nicknames), and also their use of these names may change slightly week to week (unless you force them to use Zoom registered names).
     * You can avoid these situations by adding any known nicknames in the Class list file (see the [nick names](#nicknames) section).
     * OR asking students to use Zoom names that will match the Class list. Usually, including both first and last names will do the trick.
@@ -68,7 +68,7 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
 ## <a name="non-expert"></a>Non-expert instructions
 
 ### Some technical background:
-* The input files &mdash; that you'll obtain using instructions below &mdash; are CSV files, which stands for "comma separated value" files. These are comma-delimited text files that Excel can read/produce and have the file extension `.csv`.
+* The input files &ndash; that you'll obtain using instructions below &ndash; are CSV files, which stands for "comma separated value" files. These are comma-delimited text files that Excel can read/produce and have the file extension `.csv`.
 * A "text file" is like a Word document, but much more simplified, containing only basic letters, numbers, and punctuation.
   * These can be easily opened in Word. However, the default program for opening these (by double-clicking) is usually different depending on the OS. On Windows, it's Notepad. On Macs, I think it's TextEdit.
   * An unstructured text file (i.e. not a CSV) usually has the file extension `.txt`.
@@ -131,7 +131,7 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
 * _No spaces in Zoom name_
   * The tool currently has difficulty when a Zoom name does not include a space, e.g., "BryanConnerty" in Zoom will **not** match "Bryan Connerty" from the class list (unless BryanConnerty is added to the first name or last name columns).
 * _Time Report matching_
-  * The time report &mdash; run by itself and not as full report &mdash; does **not** take into account attendees who re-enter the room with a slightly different name.
+  * The time report &ndash; run by itself and not as full report &ndash; does **not** take into account attendees who re-enter the room with a slightly different name.
   * You'll have to watch out for these.
   * This is taken care of in the full report.
 * _Entry/exit times_: The entry exit times could also be included in the report, if there's demand for it.
