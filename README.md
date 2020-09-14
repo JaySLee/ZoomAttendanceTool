@@ -40,7 +40,7 @@ The default output ("full report") is shown on-screen and also saved in a file n
 `<time>,<class name>,<other info>`
 where `<other info>` can include the Zoom name(s), unmatchable names, and possible names. For example:
 
-1. `122,Mike Wagner,(Zoom name:Wag)` -- means Mike Wagner in the Class list attended for 122 minutes. The Zoom name used was `Wag` and that name did not match any other names in the Class list.
+1. `122,Mike Wagner,(Zoom name:Wag)` &mdash; means Mike Wagner in the Class list attended for 122 minutes. The Zoom name used was `Wag` and that name did not match any other names in the Class list.
 2. `120,Charles,(POSSIBLE class names: Charles Rhoades, Charles Brown)` &mdash; means you had a Zoom attendee named `Charles` but two people in the Class list have that 1st name. Thus, you will need resolve which Charles this was. Also, the absence part will show `ABSENT? Charles Rhoades` and `ABSENT? Charles Brown`.
 3. `90,Kate Sacker,(Zoom name: Kate, K.Sacker)` &mdash; means that Kate Sacker had two separate entries in the Zoom list, possibly because her connection was broken and she re-entered the meeting with a different name. Also, she attended only 90 minutes (of my two-hour course) and so I might want to check the Zoom file to see if she was late or left early. Also, there is no one else in the class named 'Kate' or 'Sacker'.
 4. `135,Taylor Mason,(UNKNOWN: Cannot find in Class_list.csv)` &mdash; means you had an attendee whose name does not appear or cannot be matched to anyone in the Class list. This might be the instructor's name or a student's nickname that's not recorded in the Class list.
@@ -68,7 +68,7 @@ Now, you can jump to one of these subsections: [non-expert](#non-expert), [exper
 ## <a name="non-expert"></a>Non-expert instructions
 
 ### Some technical background:
-* The input files -- that you'll obtain using instructions below -- are CSV files, which stands for "comma separated value" files. These are comma-delimited text files that Excel can read/produce and have the file extension `.csv`.
+* The input files &mdash; that you'll obtain using instructions below &mdash; are CSV files, which stands for "comma separated value" files. These are comma-delimited text files that Excel can read/produce and have the file extension `.csv`.
 * A "text file" is like a Word document, but much more simplified, containing only basic letters, numbers, and punctuation.
   * These can be easily opened in Word. However, the default program for opening these (by double-clicking) is usually different depending on the OS. On Windows, it's Notepad. On Macs, I think it's TextEdit.
   * An unstructured text file (i.e. not a CSV) usually has the file extension `.txt`.
