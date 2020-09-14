@@ -47,6 +47,7 @@ where `<other info>` can include the Zoom name(s), unmatchable names, and possib
     * For cases #3 and #4, some students may use [adhoc/nick names](#nicknames), and also their use of these names may change slightly week to week (unless you force them to use Zoom registered names).
     * You can avoid these situations by adding any known nicknames in the Class list file (see the [nick names](#nicknames) section).
     * OR asking students to use Zoom names that will match the Class list. Usually, including both first and last names will do the trick.
+
 * The tool will sum up duration times for each entry (using matched names if possible). 
     * Sometimes students may leave the room or their connection breaks and then come back. 
     * Sometimes they come back using a different name, which I've seen happen if they change devices.
